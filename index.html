@@ -10,16 +10,17 @@
 <body>
     <div class="flex">
         <div class="title">
+            <h1>Etch-a-Sketch Pad</h1>
             <div class="content">
                 <div class="board"></div>
                 <div class="buttons">
-                    <button>Black</button>
-                    <button>white</button>
-                    <button>random</button>
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('white')">White</button>
+                    <button onclick="changeColor('blue')">Erase</button>
                     <button>reset</button>
                 </div>
                 <div>
-                    <input type="text" placeholder="Board size" value="16">
+                    <input type="text" placeholder="Board size" value=16 onchange="changeBoardSize(this.value)">
                     <button>Set board size</button>
                 </div>
             </div>
